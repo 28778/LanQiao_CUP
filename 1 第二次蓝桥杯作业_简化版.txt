@@ -28,3 +28,9 @@ for i in word_key:  # 遍历关键词
             cont_number += 1
 
     print(f"'{''.join(map(str, i))}'出现了{cont_number}次")
+
+# 3行 ===================================第二题 取消 def 并优化，去掉了不必要的赋值，使用count函数===================================
+
+word_more, word_key = input(), input()  # 输入数据
+for i in word_key:  # 遍历关键词
+    print(f"'{i}'出现了{word_more.count(i)}次")
